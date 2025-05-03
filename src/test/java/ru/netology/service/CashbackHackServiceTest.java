@@ -1,30 +1,29 @@
 package ru.netology.service;
-import org.testng.annotations.Test;
+import org.junit.Test;
+import org.junit.Assert;
 
-import static org.testng.Assert.assertThrows;
-import static org.testng.AssertJUnit.assertEquals;
 
 public class CashbackHackServiceTest {
     @Test
-    void shouldCashbackServiceAmountZero(){
+    public void shouldCashbackServiceAmountZero(){
         CashbackHackService service = new CashbackHackService();
-        assertThrows(IllegalArgumentException.class, () -> {
+        Assert.assertThrows(IllegalArgumentException.class, () -> {
             service.remain(0);
         });
     }
 
     @Test
-    void shouldCashbackServiceAmountPositive(){
+    public void shouldCashbackServiceAmountPositive(){
         CashbackHackService service = new CashbackHackService();
         int actual = service.remain(600);
         int expected = 400;
-        assertEquals(expected,actual);
+        Assert.assertEquals(expected,actual);
     }
 
     @Test
-    void shouldCashbackServiceAmountNegative(){
+    public void shouldCashbackServiceAmountNegative(){
         CashbackHackService service = new CashbackHackService();
-        assertThrows(IllegalArgumentException.class, () -> {
+        Assert.assertThrows(IllegalArgumentException.class, () -> {
             service.remain(-600);
         });
     }
