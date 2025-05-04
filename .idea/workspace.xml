@@ -86,19 +86,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.CashbackHackServiceTest (1)">
-    <configuration name="ru.netology.service.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.netology.service.Main" />
-      <module name="HomeworkAT01.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CashbackHackServiceTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -191,13 +178,36 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="CashbackHackServiceTest.shouldCashbackServiceAmountZeroU" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.netology.service.CashbackHackServiceTest.shouldCashbackServiceAmountZeroU&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.CashbackHackServiceTest (1)" />
+        <item itemvalue="Gradle.CashbackHackServiceTest.shouldCashbackServiceAmountZeroU" />
         <item itemvalue="Gradle.CashbackHackServiceTest.shouldCashbackServiceAmountZero (1)" />
         <item itemvalue="Gradle.CashbackHackServiceTest.shouldCashbackServiceAmountPositive (1)" />
         <item itemvalue="Gradle.CashbackHackServiceTest.shouldCashbackServiceAmountNegative (1)" />
-        <item itemvalue="Application.ru.netology.service.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +224,8 @@
       <workItem from="1746253058945" duration="2267000" />
       <workItem from="1746257656040" duration="3401000" />
       <workItem from="1746280197097" duration="2292000" />
-      <workItem from="1746291789194" duration="4762000" />
+      <workItem from="1746291789194" duration="5249000" />
+      <workItem from="1746332525397" duration="2033000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,7 @@
 package ru.netology.service;
 import org.junit.Test;
 import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
 
 
 public class CashbackHackServiceTest {
@@ -24,6 +25,30 @@ public class CashbackHackServiceTest {
     public void shouldCashbackServiceAmountNegative(){
         CashbackHackService service = new CashbackHackService();
         Assert.assertThrows(IllegalArgumentException.class, () -> {
+            service.remain(-600);
+        });
+    }
+
+    @Test
+    public void shouldCashbackServiceAmountZeroU(){
+        CashbackHackService service = new CashbackHackService();
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            service.remain(0);
+        });
+    }
+
+    @Test
+    public void shouldCashbackServiceAmountPositiveU(){
+        CashbackHackService service = new CashbackHackService();
+        int actual = service.remain(600);
+        int expected = 400;
+        Assertions.assertEquals(expected,actual);
+    }
+
+    @Test
+    public void shouldCashbackServiceAmountNegativeU(){
+        CashbackHackService service = new CashbackHackService();
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
             service.remain(-600);
         });
     }
